@@ -1,0 +1,14 @@
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+# Kuku's screenplays are confidential: never commit them
+data/input/*
+!data/input/.gitkeep
+data/uploads/
+# LLM cache contains screenplay excerpts in prompts/responses
+data/cache/
+# Outputs quote screenplay dialogue. Share them privately with Kuku (e.g. Drive link) rather than a
+# public repo; remove this line only if the repo is private.
+outputs/
+full_run_console.log
