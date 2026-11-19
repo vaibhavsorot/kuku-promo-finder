@@ -8,7 +8,6 @@ data/input/*
 data/uploads/
 # LLM cache contains screenplay excerpts in prompts/responses
 data/cache/
-# Outputs quote screenplay dialogue. Share them privately with Kuku (e.g. Drive link) rather than a
-# public repo; remove this line only if the repo is private.
+# Generated outputs can contain screenplay dialogue and stay local.
 outputs/
 full_run_console.log

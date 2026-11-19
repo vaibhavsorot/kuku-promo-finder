@@ -15,7 +15,7 @@ streamlit run app.py
 
 Open the local web address printed in Terminal, usually `http://localhost:8501`.
 
-To see the saved results, choose **replay** as the provider in the app. Replay uses saved AI responses and does not make new AI calls. It only works when the matching scripts and cache are available. The input scripts, cache and saved results are kept out of Git because they contain Kuku's content. If you cloned this repo, ask for the private assignment files to view or replay those results.
+To see the saved results, choose **replay** as the provider in the app. Replay uses saved AI responses and does not make new AI calls. It only works when the matching scripts and cache are available. The assignment input, cache and saved run files are local and are not tracked in Git.
 
 ## Run it on scripts
 
@@ -28,7 +28,7 @@ python run_pipeline.py --inspect --input "data/input/<show folder>"  # read scri
 python run_pipeline.py --input "data/input/<show folder>"             # find and rank promos
 ```
 
-To process new scripts, choose a provider and add its API key to your local `.env` file. The project supports Gemini, Claude, OpenAI-compatible services, and the Claude Code CLI. Use `.env.example` to see the settings. **Do not commit or share your API key.**
+To process new scripts, choose a provider and add its API key to your local `.env` file. The project supports Gemini, Claude, OpenAI-compatible services, and the Claude Code CLI. `.env.example` lists the required settings. API keys belong in the local `.env` file, which Git ignores.
 
 Useful options:
 
@@ -73,8 +73,6 @@ The parser and scoring rules have automated tests. Run them with:
 python -m pytest -q
 ```
 
-## Assignment files and privacy
+## Project documents
 
-The solution PDF is `docs/solution_document.pdf`. Run steps are above, and a short optional demo plan is in `docs/walkthrough_plan.md`.
-
-The assignment asks for unedited run outputs. They are in `outputs/i-married-a-broken-soldier-he-was-a-duke/raw_outputs/`. `data/input/`, `data/cache/` and `outputs/` are excluded from Git because they contain Kuku screenplay text. Share the required raw outputs privately with the assignment reviewers; do not publish them in a public repo.
+The solution PDF is `docs/solution_document.pdf`. A short optional demo plan is in `docs/walkthrough_plan.md`.

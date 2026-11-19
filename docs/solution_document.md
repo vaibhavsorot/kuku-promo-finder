@@ -36,7 +36,7 @@ The original generation run took about 9 minutes with four workers. Across the r
 
 ## What it gets wrong
 
-There are no human-labeled examples, so I do not claim precision or recall. I checked the measurable claims in code, ran a separate AI new-viewer check on the promos, and reviewed a sample against the scripts. The review is AI-assisted; an editor should repeat it.
+There are no human-labeled examples, so I do not claim precision or recall. I checked the measurable claims in code, ran a separate AI new-viewer check on the promos, and reviewed a sample against the scripts. The sample review was AI-assisted, not a human editor review.
 
 - A clip can pass the timing check but still start weakly. E26-P1 opens with a quiet line; the stronger visual moment comes about 10 seconds later.
 - The model does not judge silent visual moments as well as dialogue. It misses the Duke's entrance through smoke in E42.
